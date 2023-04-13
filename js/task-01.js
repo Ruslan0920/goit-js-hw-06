@@ -4,7 +4,7 @@ console.log(`Number of categories: ${liEl}`);
 const hTextEl = document.querySelector("h2")
 console.log(`Category: ${hTextEl.textContent}`);
 
-const ulEl = document.querySelectorAll("li ul li") 
+const ulEl = document.querySelectorAll("li.item li") 
 console.log(ulEl);
 console.log(ulEl.length);
 ulEl.forEach(function (el) {
