@@ -8,6 +8,6 @@ const ulEl = document.querySelectorAll("li.item ul li")
 console.log(ulEl);
 console.log(ulEl.length);
 ulEl.forEach(function (el) {
-    console.log(el);
+    console.dir(el);
     
 })
