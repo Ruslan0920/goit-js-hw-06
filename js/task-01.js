@@ -8,14 +8,13 @@ console.log(`Number of categories: ${liEl.length}`);
 //     })
 
 
-var selectors = document.querySelectorAll("h2");
-var arr = [];
+var selectors = document.querySelectorAll("li.item");
+const allChild = selectors.childNodes;
+console.log(allChild);
+// selectors.forEach(function (element) {
+//   console.log(`Category: ${element.textContent}`);
+// });
 
-selectors.forEach(function(element) {
-  console.log(`Category: ${element.textContent}`);
-});
-
-console.log(arr);
 
 // const numberElemUl = document.querySelectorAll("ul")
 // console.log(numberElemUl);
