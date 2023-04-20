@@ -1,5 +1,14 @@
-const liEl = document.querySelectorAll(".item");
-console.log(`Number of categories: ${liEl.length}`);
+const elements = document.querySelectorAll(".item");
+console.log(`Number of categories: ${elements.length}`);
+// const elements = document.querySelectorAll(".item ul")
+// console.log(elements);
+elements.forEach(function (elem) {
+    console.log(`Category: ${elem.firstElementChild.textContent}`);
+    console.log(`Elements: ${elem.childNodes.length}`);
+
+//   console.log(`Elements: ${element.length}`);
+});
+
 // const newElement = document.querySelectorAll("h2")
 // console.log(newElement.textContent);
 // liEl.forEach(function (elem) {
@@ -8,11 +17,19 @@ console.log(`Number of categories: ${liEl.length}`);
 //     })
 
 
-var selectors = document.querySelectorAll("li.item");
-const allChild = selectors.childNodes;
-console.log(allChild);
+// const selectors = document.querySelectorAll("h2");
+// console.log(selectors);
+// // const allChild = selectors.firstChild;
+// // console.log(allChild);
 // selectors.forEach(function (element) {
 //   console.log(`Category: ${element.textContent}`);
+// });
+// const elements = document.querySelectorAll(".item ul")
+// console.log(elements);
+// elements.forEach(function (elem) {
+//     console.log(`Elements: ${elem.children.length}`);
+    // element.join(" ")
+//   console.log(`Elements: ${element.length}`);
 // });
 
 
