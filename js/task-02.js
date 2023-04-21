@@ -6,15 +6,15 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const list = document.querySelector("#ingredients")
+  // console.log(list);
 
 ingredients.forEach(function (elem) {
-  // console.log(elem);
-
-const newTags = document.createElement("li")
-console.log(newTags);
-newTags.textContent = elem;
-console.log(newTags.textContent);
-  newTags.classList.add("item")
-  newTags.append(ingredients)
-  console.log(ingredients);
+  // console.log(elem);  
+  const newElements = document.createElement("li");
+  // console.log(newTags);
+  newElements.textContent = elem;
+  // console.log(newTags.textContent);
+  newElements.classList.add("item");
+  list.append(newElements);
 })
