@@ -14,4 +14,21 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-console.log(list)
+console.log(list);
+
+const newElements = images;
+console.log(newElements);
+const addImg = newElements.
+  map((image) => `<li> ${image}</li>`)
+  .join("")
+console.log(addImg);
+list.insertAdjacentHTML("afterbegin", addImg);
+console.log()
+
+// const newLi = document.createElement('li');
+// console.log(newLi)
+// const newImg = document.createElement('img');
+// console.log(newImg);
+// newImg.src = "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260";
+// newImg.alt = "White and Black Long Fur Cat";
+
