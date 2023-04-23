@@ -18,9 +18,22 @@ console.log(list);
 
 const newElements = images;
 console.log(newElements);
-const addImg = newElements.
-  map((image) => `<li> ${image}</li>`)
+const newArray = []
+images.forEach(function (image) {
+  const newImg = document.createElement("img");
+  console.log(newImg)
+  newImg.url = image;
+  newImg.alt = image;
+  newArray.push(newImg);
+  console.log(newArray);
+  list.append(newArray);
+})
+
+
+const addImg = newArray.
+  map((image) => `<li> ${image.alt} </li>`)
   .join("")
+
 console.log(addImg);
 list.insertAdjacentHTML("afterbegin", addImg);
 console.log()
