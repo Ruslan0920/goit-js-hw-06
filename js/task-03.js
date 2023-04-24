@@ -14,34 +14,12 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
-console.log(list);
+// console.log(list);
 
-const newElements = images;
-console.log(newElements);
-const newArray = []
-images.forEach(function (image) {
-  const newImg = document.createElement("img");
-  console.log(newImg)
-  newImg.url = image;
-  newImg.alt = image;
-  newArray.push(newImg);
-  console.log(newArray);
-  list.append(newArray);
-})
-
-
-const addImg = newArray.
-  map((image) => `<li> ${image.alt} </li>`)
+const addImg = images
+  .map((image) => `<li>
+<img src="${image.url}" alt="${image.alt}">
+  </li>`)
   .join("")
-
-console.log(addImg);
+// console.log(addImg);
 list.insertAdjacentHTML("afterbegin", addImg);
-console.log()
-
-// const newLi = document.createElement('li');
-// console.log(newLi)
-// const newImg = document.createElement('img');
-// console.log(newImg);
-// newImg.src = "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260";
-// newImg.alt = "White and Black Long Fur Cat";
-
