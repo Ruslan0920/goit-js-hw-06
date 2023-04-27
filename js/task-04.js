@@ -1,12 +1,23 @@
-let counterValue = document.querySelector("#value");
-console.log(counterValue);
-counterValue = 0;
-console.log(counterValue);
+const counter = document.querySelector("#value");
+// console.log(counter);
+let counterValue = 0;
 
-const counterClick = document.querySelector('button[data-action="increment"]');
-console.log(counterClick);
-const addValue = () => {
-    // addValue +=1
-    console.log("Button was clicked");
+const minusClick = document.querySelector('button[data-action="decrement"]');
+// console.log(minusClick);
+
+const subtractValue = () => {
+    counterValue -= 1;
+    counter.textContent = counterValue;
+    console.log("Кнопку натиснули: віднімання");
 }
-counterClick.addEventListener("click", addValue);
+minusClick.addEventListener("click", subtractValue);
+
+const plusClick = document.querySelector('button[data-action="increment"]');
+// console.log(plusClick);
+
+const addValue = () => {
+    counterValue +=1;
+    counter.textContent = counterValue;
+    console.log("Кнопку натиснули: додавання");
+}
+plusClick.addEventListener("click", addValue);
