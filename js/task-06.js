@@ -7,9 +7,9 @@ function inputBlur(event) {
     console.log('Input focus out');
     if (event.currentTarget.value.length >= inputForm.getAttribute("data-length")) {
         console.log('Довжина правильна')
-        // inputForm.style.borderColor = "#4caf50";
+        inputForm.style.borderColor = "#4caf50";
 
-        inputForm.setAttribute("style", '#validation-input.valid')
+        // inputForm.setAttribute("style", '#validation-input.valid')
         // inputForm.classList.add('#validation-input.valid')
         // inputForm.className = "#validation-input.valid";
         // inputForm.id = "#validation-input.valid"
