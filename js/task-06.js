@@ -7,13 +7,14 @@ function inputBlur(event) {
     console.log('Input focus out');
     if (event.currentTarget.value.length >= inputForm.getAttribute("data-length")) {
         console.log('Довжина правильна')
-        inputForm.style.borderColor = "#4caf50";
+        // inputForm.style.borderColor = "#4caf50";
 
-        // inputForm.setAttribute("style", '#validation-input.valid')
+        // inputForm.style.setProperty("border-color", "#4caf50")
+        // inputForm.setAttribute("style", "valid")
         // inputForm.classList.add('#validation-input.valid')
-        // inputForm.className = "#validation-input.valid";
-        // inputForm.id = "#validation-input.valid"
-        console.log(inputForm.id);
+        inputForm.className = "valid";
+        // event.currentTarget.id = "validation-input.valid";
+        // console.log(inputForm.id);
     } else {
         inputForm.style.borderColor = "#f44336";
         // inputForm.id = "#validation-input.invalid"
