@@ -8,3 +8,4 @@ function inputBlur(event) {
         inputForm.setAttribute("class", "invalid")
     }
 }
+console.log();
