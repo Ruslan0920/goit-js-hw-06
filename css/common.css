@@ -23,6 +23,16 @@ button {
   cursor: pointer;
 }
 
+ul {
+    list-style: none;
+}
+
 img {
   width: 300px;
+  height: 200px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
 }
