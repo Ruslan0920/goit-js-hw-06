@@ -1,5 +1,5 @@
-const buttonChangeClor = document.querySelector(".change-color");
-buttonChangeClor.addEventListener('click', changeBodyColor)
+const buttonChangeColor = document.querySelector(".change-color");
+buttonChangeColor.addEventListener('click', changeBodyColor)
 // console.log(buttonChangeClor);
 const spanBackgroundColor = document.querySelector(".color");
 // console.log(spanBackgroundColor);
