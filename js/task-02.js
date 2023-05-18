@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 const list = document.querySelector("#ingredients")
-console.log(list);
+// console.log(list);
 
 // list.insertAdjacentHTML('beforebegin', ingredients
 // .map(el => `<li>${el}</li>`)
@@ -16,21 +16,27 @@ console.log(list);
 // const newElements = document.createElement("li");
 //     console.log(newElements);
 
+const allElements = [];
+console.log(allElements);
+  
 ingredients.forEach(function (elem) {
-  console.log(elem);
+    console.log(elem);
+    
 
   const newElements = document.createElement("li");
-    console.log(newElements);
+    // console.log(newElements);
+  
   
   // newElements = elem;
 
   newElements.textContent = elem;
-  // console.log(newElements.textContent);
+  // // console.log(newElements.textContent);
 
   newElements.classList.add("item");
-
-  
+    
+  // list.append(newElements);
+  // console.log(newElements);
+    // console.log(createNewElements);
 });
-
-// list.append(newElements);
-//   // console.log(newElements);
+  // list.append();
+  // console.log(list.append(createNewElements)); 
