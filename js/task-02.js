@@ -16,8 +16,8 @@ const list = document.querySelector("#ingredients")
 // const newElements = document.createElement("li");
 //     console.log(newElements);
 
-const allElements = [];
-console.log(allElements);
+// const allElements = [];
+// console.log(allElements);
   
 ingredients.forEach(function (elem) {
     console.log(elem);
@@ -34,7 +34,7 @@ ingredients.forEach(function (elem) {
 
   newElements.classList.add("item");
     
-  // list.append(newElements);
+  list.append(newElements);
   // console.log(newElements);
     // console.log(createNewElements);
 });
