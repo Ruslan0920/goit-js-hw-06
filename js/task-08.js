@@ -14,8 +14,7 @@ function confirmSubmit(event) {
     email: email.value,
     password: password.value,
   }
-  console.log(objectForm);
-
+  console.dir(objectForm);
   // console.log(`Email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
 }
