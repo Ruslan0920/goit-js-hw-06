@@ -9,32 +9,33 @@ const ingredients = [
 const list = document.querySelector("#ingredients")
 console.log(list);
 
+
 // list.insertAdjacentHTML('beforebegin', ingredients
 // .map(el => `<li>${el}</li>`)
 // .join(''));
 
-const newElements = document.createElement("li");
+// const newElements = document.createElement("li");
 //   console.log(newElements);
 ingredients.forEach(function (elem) {
     // console.log(elem);
 // const content = newElements.innerHTML;
 // console.log(content);
-  // const newElements = document.createElement("li");
-//   console.log(newElements);
-  const createNewElements = newElements.querySelector("li");
-  console.log(createNewElements);
 
+  const newElements = document.createElement("li");
+//   console.log(newElements);
   newElements.textContent = elem;
   console.log(newElements.textContent);
-
   newElements.classList.add("item");
     
-  // list.append(newElements);
+  list.append(newElements);
   // // console.log(newElements);
     // console.log(createNewElements);
   
+  // return createNewElements;
+  
+  
 });
-list.append(newElements);
+// list.append(createNewElements);
 // const content = createNewElements.innerHTML;
 // console.log(content);
 //   list.append(content);
