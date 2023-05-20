@@ -9,6 +9,17 @@ const ingredients = [
 const list = document.querySelector("#ingredients")
 console.log(list);
 
+const createNewElements = ingredients.map(elem =>
+  document.createElement("li")
+// elem.textContent = elem;
+)
+console.log(createNewElements);
+
+// const planets = ["Земля", "Марс", "Венера", "Юпітер"];
+
+// const planetsInUpperCase = ingredients.map(elem => elem.toUpperCase());
+// console.log(planetsInUpperCase);
+
 
 // list.insertAdjacentHTML('beforebegin', ingredients
 // .map(el => `<li>${el}</li>`)
@@ -16,25 +27,25 @@ console.log(list);
 
 // const newElements = document.createElement("li");
 //   console.log(newElements);
-ingredients.forEach(function (elem) {
-    // console.log(elem);
-// const content = newElements.innerHTML;
-// console.log(content);
+// ingredients.forEach(function (elem) {
+//     // console.log(elem);
+// // const content = newElements.innerHTML;
+// // console.log(content);
 
-  const newElements = document.createElement("li");
-//   console.log(newElements);
-  newElements.textContent = elem;
-  console.log(newElements.textContent);
-  newElements.classList.add("item");
+//   const newElements = document.createElement("li");
+// //   console.log(newElements);
+//   newElements.textContent = elem;
+//   console.log(newElements.textContent);
+//   newElements.classList.add("item");
     
-  list.append(newElements);
-  // // console.log(newElements);
-    // console.log(createNewElements);
+//   list.append(newElements);
+//   // // console.log(newElements);
+//     // console.log(createNewElements);
   
-  // return createNewElements;
+//   // return createNewElements;
   
   
-});
+// });
 // list.append(createNewElements);
 // const content = createNewElements.innerHTML;
 // console.log(content);
