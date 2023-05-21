@@ -10,15 +10,21 @@ console.log(ingredients);
 const list = document.querySelector("#ingredients")
 console.log(list);
 
-const createNewElements = ingredients.map(elem =>
-  document.createElement('li')
-// elem.textContent = "elem"
-  // elem.classList.add("item")
-)
+const createNewElements = ingredients.map(ingredient => {
+  const newElements = document.createElement('li');
+  console.log(newElements);
+  newElements.textContent = ingredient;
+  console.log(newElements.textContent);
+  newElements.classList.add("item");
+  return newElements
+} 
+).join(" ")
 
-// console.log(elem);
-console.dir(createNewElements);
-list.append(createNewElements)
+
+console.log(createNewElements);
+list.append(createNewElements);
+// list.insertAdjacentHTML('beforebegin', createNewElements)
+
 
 // const planets = ["Земля", "Марс", "Венера", "Юпітер"];
 
