@@ -6,14 +6,19 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+console.log(ingredients);
 const list = document.querySelector("#ingredients")
 console.log(list);
 
 const createNewElements = ingredients.map(elem =>
-  document.createElement("li")
-// elem.textContent = elem;
+  document.createElement('li')
+// elem.textContent = "elem"
+  // elem.classList.add("item")
 )
-console.log(createNewElements);
+
+// console.log(elem);
+console.dir(createNewElements);
+list.append(createNewElements)
 
 // const planets = ["Земля", "Марс", "Венера", "Юпітер"];
 
